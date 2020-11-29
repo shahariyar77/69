@@ -1,0 +1,993 @@
+/*
+Basic Information:
+--------------------
+
+Project Name   	:	NGH school Template
+Author       	: 	NGH school
+Our Site 		: 	https://youthenlight.com
+Description 	: 	This is html5 School template
+Developed By 	: 	Mahbubul Haq
+Phone           :   01515672069
+
+
+-----------------------------------------------------------------------------------*/
+/*================== 1. Start Template Common CSS ===============*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,Philosopher,Roboto;
+    
+}
+.bg_img_full_body{
+    background: url("../img/bg.jpg");
+}
+.fix{
+    margin: 0;
+    padding: 0;
+}
+.no_padding{
+    padding: 0;
+}
+.no_margin{
+    margin: 0;
+}
+.middle_manu {
+    position:fixed;
+    top: 82%;
+    left: 10px;
+    z-index: 99999;
+}
+.middle_manu ul{
+    margin: 0;
+    padding: 0;
+
+}
+.middle_manu ul li {
+ list-style: none;
+}
+
+
+.middle_manu ul li a{
+    background: #808286 none repeat scroll 0 0;
+    color: #e1e1e1;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-top: 6px;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    width: 115px;
+    margin-bottom: 2px;
+}
+.middle_manu ul li a:hover{
+    background: #000000 none repeat scroll 0 0;
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 10px;
+    text-decoration: none;
+    width: 142px;
+}
+.middle_manu ul li a::after {
+    background: white;
+    content: "";
+    height: 29px;
+    top: 1px;
+    right: 9px;
+    position: absolute;
+    transition: all 0.5s;
+    width: 3px;
+    z-index: 9999999;
+    transform: rotate(25deg);
+    visibility: hidden;
+}
+.middle_manu ul li a:hover::after {
+    visibility: visible;
+    transform: rotate(0deg);
+    
+}
+
+
+
+
+
+
+/*========================   Nav manu ==================*/
+/*========================  start ==================*/
+
+.main_logo{
+    text-align: center;
+}
+.main_manu ul{
+    margin: 0;
+    padding: 0;
+}
+.main_manu  li {
+    display: inline;
+}
+.main_manu li a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding: 8px 15px;
+    position: relative;
+}
+.main_manu li a::after {
+    content: "";
+    top: -3px;
+    left: 12px;
+    height: 13%;
+    width: 1%;
+    position: absolute;
+    background: #54d154;
+    transition: 1s;
+    visibility: hidden;
+}
+.main_manu li a:hover::after{
+    width: 75%;
+    visibility: visible;
+}
+.search_ber input {
+    background: rgba(255,255,255,0.71);
+    border-radius: 12px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-left: 11rem;
+}
+
+.slider_item {
+    position: absolute;
+    top: 38%;
+    left: 30px;
+    z-index: 9;
+}
+.slider_tex {
+    margin-left: 86px;
+    text-align: center;
+}
+.slider_tex a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background: #54d154;
+    padding: 16px 42px 21px 45px;
+    border-radius: 42px;
+    font-size: 15px;
+    margin-top: 74px;
+}
+.content {
+    z-index: 99;
+    display: inline-flex;
+    margin-top: 6rem;
+}
+.content p{
+    color:red;
+    background: #ddd;
+    
+}
+.slider_tex h1 {
+    font-size: 43px;
+    padding-bottom: 50px;
+}
+.slider_baton {
+    margin-left: 9rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+.slider_baton a {
+    text-decoration: none;
+    list-style: none;
+    padding: 7px 10px 8px 14px;
+    color: #1d1c1c;
+    background:rgba(255,255,255,0.6);
+    font-size: 23px;
+    border-radius: 12px;
+}
+.header_content {
+    position: absolute;
+    top: 2%;
+    left: 23px;
+    z-index: 9;
+}
+/*========================  what  we do start ==================*/
+.whatwe_area{
+    
+}
+.whatwe_title{
+    text-align: center;
+	color: #828181;
+	position: relative;
+}
+.whatwe_title::after {
+    content: "";
+    top: 25px;
+    left: 54rem;
+    height: 2px;
+    width: 52px;
+    position: absolute;
+    background: #828181;
+}
+
+.whatwe_title h1{
+    font-size: 20px;
+	padding-bottom: 3px;
+}
+.whatwe_title p{
+    font-size: 12px;
+}
+.lorer1{
+    text-align: center;
+}
+.lorm_pic {
+    background: #e1f3e1;
+    height: 8rem;
+    width: 12rem;
+    text-align: center;
+    margin-left: 11rem;
+    border-radius: 25px;
+}
+.lore_area {
+    margin-top: 7rem;
+}
+.lorer1 img {
+    height: 50px;
+    margin-top: 16px;
+}
+.lorer1 h3 {
+    font-size: 20px;
+}
+.lorer1 p {
+    font-size: 14px;
+    padding-bottom: 3rem;
+}
+.lorer1 a {
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 20px 11px 20px;
+    background: #54d154;
+    border-radius: 17px;
+    
+}
+/*======================== mixitub area  start ==================*/
+.mixi_area{
+ background: #54d154;   
+}
+.mixi_title {
+    text-align: center;
+    position: relative;
+    margin-top: 56px;
+    color: #278627;
+}
+.mixi_title h3{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.mixi_title::after {
+    content: "";
+    top: 3rem;
+    left: 56rem;
+    height: 2px;
+    width: 36px;
+    background: #207b20;
+    position: absolute;
+}
+.mixi_title p{
+    font-size: 12px;
+    padding-bottom: 4rem;
+}
+.mixitub{
+    text-align: center;
+}
+.mixbtns{
+    padding-bottom: 5rem;
+}
+.mixbtns a{
+    text-decoration: none;
+    color: #fff;
+    background: #2b9b2b;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: 1s;
+}
+.mixbtns a:hover{
+    color: #2b9b2b;
+    background: #fff;
+}
+.p-graphy img {
+    height: 15rem;
+    width: 14%;
+    padding: 0px 0px 12px 16px;
+}
+.d-sing img{
+    height: 15rem;
+    width: 14%;
+    padding: 0px 0px 12px 16px;
+}
+.p-rint img{
+    height: 15rem;
+    width: 14%;
+    padding: 0px 0px 12px 16px;
+}
+.view_more{
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+.view_more a {
+    text-decoration: none;
+    padding: 10px 33px;
+    color: #fff;
+    background: #2b9b2b;
+    border-radius: 15px; 
+}
+/*========================TESTIMONIALS area  start ==================*/
+.testimonials_title {
+    text-align: center;
+    margin-top: 4rem;
+	color: #a3a3a3;
+	position: relative;
+}
+.testimonials_title::after {
+    content: "";
+    top: 30px;
+    left: 52rem;
+    height: 2px;
+    width: 51px;
+    position: absolute;
+    background: #a3a3a3;
+}
+
+.testimonials_title h3{
+    padding-bottom: 3px;
+    
+}
+.testimonial_slider{
+background: #ffffff;
+    
+    
+}
+.item2 {
+    width: 100%;
+    height: 160px;
+}
+.item2 h4 {
+    font-size: 20px;
+    width: 562px;
+    text-align: center;
+    margin-left: 31rem;
+    color: #5d5d5d;
+}
+.mr_herp {
+    width: 50px;
+    margin-left: 50rem;
+    margin-top: 3rem;
+	color:#5d5d5d;
+	position: relative;
+}
+.mr_text {
+    color: #5d5d5d;
+    text-align: center;
+    position: absolute;
+    top: 10rem;
+    left: 56rem;
+	padding-bottom: 2rem;
+	
+}
+.mr_text h5 {
+    font-size: 15px;
+    margin-left: -80px;
+    margin-top: 15px;
+}
+.mr_text h3 {
+    font-size: 15px;
+    margin-top: -3px;
+    margin-left: -8px;
+}
+.text_text{
+	position: relative;
+}
+.owl-prev{
+	left: 10rem;
+	position: absolute;
+	top: 20%;
+}
+.owl-next{
+	right:10rem;
+	position: absolute;
+	top: 20%;
+}
+/*========================OUR HAPPY CLIEN area  start ==================*/
+.our_happy_area{
+	background: #f2f1f1;
+	
+}
+.our_happy_tittle {
+    text-align: center;
+    padding-bottom: 5rem;
+    margin-top: 4rem;
+	color: #8b8a8a;
+	position: relative;
+}
+.our_happy_tittle::after {
+    top: 32px;
+    left: 53rem;
+    content: "";
+    height: 2px;
+    width: 54px;
+    position: absolute;
+    background: #828181;
+}
+.our_happy_tittle h2{
+	font-size: 27px;
+	padding-bottom:5px;
+}
+.our_google {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.our_google img {
+    height: 31px;
+    width: 80px;
+    text-align: center;
+}
+.our_quel {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.our_quel img {
+    height: 41px;
+    width: 87px;
+    text-align: center;
+}
+.our_quel2{
+	text-align: center;
+}
+.our_quel2 img {
+    height: 44px;
+    width: 84px;
+}
+.our_quel3{
+	text-align: center;
+}
+.our_quel3 img {
+    height: 51px;
+    width: 43px;
+}
+.our_quel4{
+	text-align: center;
+}
+.our_quel4 img {
+    height: 22px;
+    width: 113px;
+}
+.our_happy_baton {
+    text-align: center;
+    margin-top: 85px;
+	padding-bottom: 4rem;
+}
+.our_happy_baton a {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 39px;
+    background: #dddcdc;
+    border-radius: 19px;
+	color: #828181;
+}
+/*=========================MEET THE TEAM area  start ==================*/
+.meet_the_team_area{
+	background: #54d154;
+	width: 100%;
+	height:500px;
+}
+.meet1_area {
+    margin-top: 2rem;
+}
+.meet_area_title {
+    text-align: center;
+    margin-top: 4rem;
+	color: #207b20;
+	position: relative;
+}
+.meet_area_title::after {
+    content: "";
+    top: 3rem;
+    left: 55rem;
+    height: 2px;
+    width: 64px;
+    background: #207b20;
+    position: absolute;
+}
+.meet_area_title h2{
+	font-size: 25px;
+}
+.meet_area_title p{
+	font-size: 12px;
+}
+/*=========================main_meet1 area  start ==================*/
+
+.main_meet1{
+	text-align: center;
+	position: relative;
+}
+
+.main_meet1::before {
+    content: "";
+    top: 19rem;
+    left: 17rem;
+    height: 3px;
+    width: 67px;
+    background: #207b20;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.main_meet1 img {
+    height: auto;
+    width: auto;
+    margin-left: -73rem;
+    margin-top: 20px;
+}
+.main_baton {
+    margin-top: 8rem;
+    margin-left: 14rem;
+    width: 112px;
+}
+.title {
+    text-align: center;
+    margin-top: 9rem;
+}
+.all_baton {
+    display: inline-flex;
+    background: #c5e9c5;
+    width: 121px;
+    height: 39px;
+    border-radius: 25px;
+}
+.main_baton1 {
+    margin-left: 6px;
+    margin-top: 8px;
+}
+.main_baton1 a {
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 19px;
+	color: #e9508b;
+	font-size: 20px;
+}
+.main_baton2 {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+.main_baton2 a{
+	 text-decoration: none;
+    padding: 8px;
+    margin-top: 19px;
+	color: #e9508b;
+	font-size: 20px;
+	color:#0061ff;
+}
+.main_baton3{
+	margin-left: 6px;
+    margin-top: 8px;
+}
+.main_baton3 a{
+	 text-decoration: none;
+    padding: 8px;
+    margin-top: 19px;
+	color: #00aced;
+	font-size: 20px;
+	
+}
+/*=========================meet2_area   start ==================*/
+.meet2_area{
+	
+}
+.main_meet2 {
+    text-align: center;
+    position: relative;
+    margin-top: -30rem;
+    margin-left: 34rem;
+}
+
+.main_meet2::before {
+    content: "";
+    top: 19rem;
+    left: 1rem;
+    height: 3px;
+    width: 67px;
+    background: #207b20;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.main_meet2 img {
+    height: auto;
+    width: auto;
+    margin-left: -73rem;
+    margin-top: 20px;
+}
+.main_baton_secound {
+    margin-top: 8rem;
+    margin-left: 32rem;
+    width: 112px;
+}
+.title2 {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.all_baton2 {
+    display: inline-flex;
+    background: #c5e9c5;
+    width: 121px;
+    height: 39px;
+    border-radius: 25px;
+}
+/*=========================meet3_area   start ==================*/
+.meet3_area{
+	
+}
+.main_meet3 {
+    text-align: center;
+    position: relative;
+    margin-top: -30rem;
+    margin-left: 67rem;
+}
+
+.main_meet3::before {
+    content: "";
+    top: 19rem;
+    left: -16rem;
+    height: 3px;
+    width: 67px;
+    background: #207b20;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.main_meet3 img {
+    height: auto;
+    width: auto;
+    margin-left: -73rem;
+    margin-top: 20px;
+}
+.main_baton_third {
+    margin-top: 8rem;
+    margin-left: 49rem;
+    width: 112px;
+}
+.title3 {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.all_baton3 {
+    display: inline-flex;
+    background: #c5e9c5;
+    width: 121px;
+    height: 39px;
+    border-radius: 25px;
+}
+/*=========================meet4_area   start ==================*/
+.meet4_area{
+	
+}
+.main_meet4 {
+    text-align: center;
+    position: relative;
+    margin-top: -30rem;
+    margin-left: 101rem;
+}
+
+.main_meet4::before {
+    content: "";
+    top: 19rem;
+    left: -33rem;
+    height: 3px;
+    width: 67px;
+    background: #207b20;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.main_meet4 img {
+    height: auto;
+    width: auto;
+    margin-left: -73rem;
+    margin-top: 20px;
+}
+.main_baton_four {
+    margin-top: 8rem;
+    margin-left: 66rem;
+    width: 112px;
+}
+.title4{
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.all_baton4 {
+    display: inline-flex;
+    background: #c5e9c5;
+    width: 121px;
+    height: 39px;
+    border-radius: 25px;
+}
+/*=========================meet5_area   start ==================*/
+.meet5_area{
+	
+}
+.main_meet5 {
+    text-align: center;
+    position: relative;
+    margin-top: -30rem;
+    margin-left: 100rem;
+}
+
+.main_meet5::before {
+    content: "";
+    top: 19rem;
+    left: -15rem;
+    height: 3px;
+    width: 67px;
+    background: #207b20;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.main_meet5 img {
+    height: auto;
+    width: auto;
+    margin-left: -38rem;
+    margin-top: 20px;
+}
+.main_baton_five {
+    margin-top: 8rem;
+    margin-left: 83rem;
+    width: 112px;
+}
+.title4{
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.all_baton5 {
+    display: inline-flex;
+    background: #c5e9c5;
+    width: 121px;
+    height: 39px;
+    border-radius: 25px;
+}
+.work_with {
+    width: 100%;
+    height: 65px;
+    background: #3eba3e;
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+}
+.work_baton {
+    position: absolute;
+    top: 25px;
+    left: 53rem;
+    text-align: center;
+}
+.work_baton a{
+text-decoration: none;
+	list-style: none;
+	margin-top: 5px;
+	padding: 5px 8px;
+	background: #54d154;
+	border-radius: 12px;
+	
+}
+/*=========================about us start ==================*/
+.about_area {
+    margin-top: 44px;
+    background: #333333;
+    padding-bottom: 4rem;
+}
+
+
+.about_us{
+	text-align: center;
+	margin-top: 3rem;
+}
+.about_title h6{
+	font-size: 20px;
+	color: #dddddd;
+}
+.about_text{
+	text-align: center;
+}
+.about_text p {
+    font-size: 12px;
+    text-align: justify;
+    width: 320px;
+    margin-left: 23px;
+	color: #dddddd;
+}
+.recent_area{
+	text-align: center;
+	margin-top: 3rem;
+}
+.recent_title h6{
+	color: #dddddd;
+	font-size: 20px;
+}
+.recent_pic{
+	line-height: 44px;
+}
+
+.recent_pic img {
+    height: 36px;
+    width: 79px;
+	border-radius: 5px;
+}
+.lorem{
+}
+.lorem a{
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 0;
+	margin-top: 0;
+	color: #fff;
+	padding: 2px 4px;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+.lorem a:hover{
+	background: #54d154;
+}
+.lorem_baton {
+    margin-top: -9px;
+    margin-left: -19px;
+}
+.lorem P {
+    width: 185PX;
+    font-size: 12PX;
+    margin-left: -20px;
+    margin-top: 4px;
+	color: #dddddd;
+}
+.contact_us_area{
+	margin-top: 3rem;
+}
+.contact_title {
+    text-align: center;
+    color: #dddddd;
+}
+.contact_title h6{
+	font-size: 20px;
+	
+}
+.contact_title p {
+    text-align: center;
+    font-size: 12px;
+    width: 310px;
+    margin-left: 10px;
+}
+.contact_us{
+	text-align: center;
+}
+
+.text input{
+	padding: 5px;
+}
+.name input {
+    background: #444444;
+    padding-bottom: 6px;
+    border: none;
+    padding: 3px 21px;
+    border-radius: 8px;
+}
+.email input {
+    background: #444444;
+    padding-bottom: 6px;
+    border: none;
+    padding: 3px 21px;
+    border-radius: 8px; 
+    margin-top: 5px;
+}
+.massage input {
+    background: #444444;
+    padding-bottom: 6px;
+    border: none;
+    padding: 50px 25px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.baton{
+	margin-top: 11px;
+}
+.baton a {
+    text-decoration: none;
+    list-style: none;
+    padding: 11px 82px;
+    background: #2b9b2b;
+     color: #fff;
+    border-radius: 18px;
+}
+/*=========================as seen on start ==================*/
+.seen_area {
+    background: #222222;
+    padding-bottom: 2rem;
+}
+.seen_title{
+	text-align: center;
+	position: relative;
+}
+.seen_title::after {
+    content: "";
+    height: 2px;
+    width: 49px;
+    background: #111111;
+    top: 3rem;
+    left: 56rem;
+    position: absolute;
+}
+.seen_title h6{
+	font-size:20px;
+	color: #111111;
+}
+.main_seen{
+	text-align: center;
+	
+}
+.main_seen img{
+	height: auto;
+	width: auto;
+}
+/*========================= fotter on start ==================*/
+.fotter{
+	background: #111111;
+}
+.main_fotter{
+	text-align: center;
+	color: #fff;
+}
+.main_fotter p {
+    margin-top: 7px;
+    padding-bottom: 2px;
+}
+
+
+/*========================= strick fotter ==================*/
+
+.full-fotter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.full-site {
+  margin-bottom: 568.45px;
+  position: relative;
+  z-index: 99999999999;
+  background: #fff;
+}
+.row.mit-6 {
+	margin: 0;
+}
+
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
